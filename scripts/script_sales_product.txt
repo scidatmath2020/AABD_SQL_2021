@@ -1,0 +1,19 @@
+CREATE TABLE sales(Order_Line int Primary Key,
+				   Order_ID varchar,
+				   Order_Date date,
+				   Ship_Date date,
+				   Ship_Mode varchar,
+				   Customer_ID varchar,
+				   Product_ID varchar,
+				   Sales numeric,
+				   Quantity int,
+				   Discount numeric,
+				   Profit numeric)
+
+CREATE TABLE product(product_id varchar PRIMARY KEY,
+					 category varchar,
+					 sub_category varchar,
+					 product_name varchar)
+
+COPY sales FROM 'C:\Users\Public\Documents\aabd_sql_2021\sales.csv' DELIMITER ',' CSV HEADER;
+COPY product FROM 'C:\Users\Public\Documents\aabd_sql_2021\product.csv' DELIMITER ',' CSV HEADER;

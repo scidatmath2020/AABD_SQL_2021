@@ -1,0 +1,11 @@
+CREATE TABLE month(MM int);
+CREATE TABLE year(YYYY int);
+
+INSERT INTO month VALUES (1),(2),(3),(4),(5),(6),(7),(8),(9),(10),(11),(12);
+INSERT INTO year VALUES (2011),(2012),(2013),(2014),(2015),(2016),(2017),(2018),(2019),(2020),(2021);
+
+create table A(col1A char(1),col2A varchar);
+create table B(col1B char(1),col2B varchar);
+
+insert into A values ('A','dato A'),('B','dato B'),('C','dato C'),('D','dato D'),('C','dato C');
+insert into B values ('C','s'),('C','dato C'),('F','u'),('C','dato C'),('G','v'),('C','dato C');
